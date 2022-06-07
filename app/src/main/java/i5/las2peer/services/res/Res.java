@@ -97,7 +97,7 @@ public class Res extends RESTService {
   @Produces(MediaType.APPLICATION_JSON)
   @Consumes(MediaType.TEXT_PLAIN)
   @ApiResponses(value = {
-       @ApiResponse(code = HttpURLConnection.HTTP_OK, message = "res")
+       @ApiResponse(code = HttpURLConnection.HTTP_CREATED, message = "res")
   })
   @ApiOperation(value = "gettest", notes = " ")
   public Response gettest() {
@@ -120,7 +120,7 @@ public class Res extends RESTService {
 
       
 
-      return Response.status(HttpURLConnection.HTTP_OK).entity(result.toJSONString()).build();
+      return Response.status(HttpURLConnection.HTTP_CREATED).entity(result.toJSONString()).build();
     }
     return null;
   }
