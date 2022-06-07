@@ -107,11 +107,11 @@ public class ResTest {
 
   /**
    * 
-   * Second Test for the NewTestCase_ID295448 method.
+   * Second Test for the NewTestCase1_ID295448 method.
    * 
    */
   @Test
-  public void testNewTestCase_ID295448() {
+  public void testNewTestCase1_ID295448() {
     MiniClient c = new MiniClient();
     c.setConnectorEndpoint(connector.getHttpEndpoint());
     
