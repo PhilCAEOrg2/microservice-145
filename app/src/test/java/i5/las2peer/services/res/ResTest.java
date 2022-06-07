@@ -134,11 +134,11 @@ public class ResTest {
   }
   /**
    * 
-   * Second Test for the Fails_ID784541 method.
+   * Second Test for the Fails2_ID784541 method.
    * 
    */
   @Test
-  public void testFails_ID784541() {
+  public void testFails2_ID784541() {
     MiniClient c = new MiniClient();
     c.setConnectorEndpoint(connector.getHttpEndpoint());
     
