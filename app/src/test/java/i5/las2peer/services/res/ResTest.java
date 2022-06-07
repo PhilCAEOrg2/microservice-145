@@ -159,6 +159,19 @@ public class ResTest {
 
     
   }
+  /**
+   * 
+   * Second Test for the NewTestCase_ID593764 method.
+   * 
+   */
+  @Test
+  public void testNewTestCase_ID593764() {
+    MiniClient c = new MiniClient();
+    c.setConnectorEndpoint(connector.getHttpEndpoint());
+    
+    
+    
+  }
 
 
 
