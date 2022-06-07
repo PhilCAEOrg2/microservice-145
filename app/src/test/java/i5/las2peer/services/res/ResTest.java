@@ -132,6 +132,33 @@ public class ResTest {
 
     
   }
+  /**
+   * 
+   * Second Test for the Fails_ID784541 method.
+   * 
+   */
+  @Test
+  public void testFails_ID784541() {
+    MiniClient c = new MiniClient();
+    c.setConnectorEndpoint(connector.getHttpEndpoint());
+    
+        
+    try {
+      c.setLogin(AnonymousAgentImpl.IDENTIFIER, "");
+      ClientResponse result = c.sendRequest("GET", mainPath + "/test", """
+""");
+    
+      Assert.assertEquals("[248438]", result.getHttpCode(), 200);
+
+      System.out.println("Result of 'test$HTTP_Method_Name$': " + result.getResponse().trim());
+    } catch (Exception e) {
+      e.printStackTrace();
+      fail("Exception: " + e);
+    }
+    
+
+    
+  }
 
 
 
